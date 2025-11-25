@@ -6,6 +6,5 @@ nevergrad
 ortools
 matplotlib
 seaborn
-typing
 pyvrp
-re
+
