@@ -1,0 +1,11 @@
+streamlit
+plotly
+pandas
+numpy
+nevergrad
+ortools
+matplotlib
+seaborn
+typing
+pyvrp
+re
