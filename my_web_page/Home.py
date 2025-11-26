@@ -1,4 +1,3 @@
-
 import streamlit as st
 import os
 from PIL import Image, ImageOps, ImageDraw
@@ -46,6 +45,7 @@ with col2:
 st.markdown("---")
 
 st.subheader("📌 Navigation")
+st.info("If the page fails to load properly, try refreshing it.")
 st.write("Use the sidebar or the buttons below to explore the pages.")
 
 # Buttons to navigate to other pages
