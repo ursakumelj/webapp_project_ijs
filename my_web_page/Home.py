@@ -50,10 +50,10 @@ st.write("Use the sidebar or the buttons below to explore the pages.")
 
 # Buttons to navigate to other pages
 if st.button("➡️ Go to Evolutionary algorithm benchmarking tool"):
-    st.switch_page("pages/1_benchmarking.py")
+    st.switch_page("pages/1_Benchmarking.py")
 
 if st.button("➡️ Go to Vehicle routing problem solver with OR-Tools"):
-    st.switch_page("pages/2_ortools.py")
+    st.switch_page("pages/2_Ortools.py")
 
 if st.button("➡️ Go to Vehicle routing problem solver with Nevergrad"):
-    st.switch_page("pages/3_nevergrad.py")
+    st.switch_page("pages/3_Nevergrad.py")
