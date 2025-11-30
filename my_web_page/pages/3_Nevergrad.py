@@ -43,11 +43,11 @@ initializer = st.radio("Choose initial solution:", ["CHRISTOFIDES", "PATH_CHEAPE
 seed_prefix = "Christofides" if initializer == "CHRISTOFIDES" else "PATH_CHEAPEST"
 seed_path = TEST_DIR / f"{seed_prefix}_{problem_name}.sol"
 
-if seed_path.exists():
-    st.success(f"Using seed solution: {seed_path.name}")
-else:
-    st.warning(f"Seed solution '{seed_path.name}' not found — running unseeded only.")
-    seed_path = None
+# if seed_path.exists():
+#     st.success(f"Using seed solution: {seed_path.name}")
+# else:
+#     st.warning(f"Seed solution '{seed_path.name}' not found — running unseeded only.")
+#     seed_path = None
 
 # --- Parameters ---
 ALGOS = ["NGOpt", "OnePlusOne", "DE"]
