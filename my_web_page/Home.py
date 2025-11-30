@@ -49,11 +49,11 @@ st.info("If the page fails to load properly, try refreshing it.")
 st.write("Use the sidebar or the buttons below to explore the pages.")
 
 # Buttons to navigate to other pages
-if st.button("➡️ Go to Evolutionary algorithm benchmarking tool"):
+if st.button(":material/insights: Evolutionary algorithm benchmarking tool"):
     st.switch_page("pages/1_Benchmarking.py")
 
-if st.button("➡️ Go to Vehicle routing problem solver with OR-Tools"):
+if st.button(":material/directions_car: Vehicle routing problem solver with OR-Tools"):
     st.switch_page("pages/2_Ortools.py")
 
-if st.button("➡️ Go to Vehicle routing problem solver with Nevergrad"):
+if st.button(":material/auto_awesome: Vehicle routing problem solver with Nevergrad"):
     st.switch_page("pages/3_Nevergrad.py")

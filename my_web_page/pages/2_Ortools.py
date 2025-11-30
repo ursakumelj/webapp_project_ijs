@@ -189,14 +189,16 @@ def plot_routes_streamlit(vrp_instance, tours):
 # ============================================================
 
 st.set_page_config(page_title="VRP Solver", page_icon="🚚")
-st.title("🚚 Vehicle Routing Problem Solver (OR-Tools)")
+st.title(":material/directions_car: Vehicle Routing Problem Solver (OR-Tools)")
 
-st.info("If the page fails to load properly, try refreshing it.")
+st.warning("If the page fails to load properly, try refreshing it.")
+st.info("Choose a CVRP test problem and an initial solution strategy. The solver returns optimized routes and total cost using MIP behind the scenes.")
 
-st.write("OR-Tools is a powerful open-source software suite for optimization, developed by Google. The implementation of algorithm bellow is based on a paper https://medium.com/data-science/the-vehicle-routing-problem-exact-and-heuristic-solutions-c411c0f4d734. " \
-"It expects a test problem in the CVRP problem format (see https://github.com/PyVRP/Instances/tree/main/CVRP). " \
-"For solution strategies, CHRISTOFIDES and PATH_CHEAPEST_ARC are supported. Later it will be possible to choose more strategies. " \
-"The solver gives you all the routes and final best cost, and visualizes them on a 2D plot.")
+with st.expander("More about this solver"):
+    st.write("OR-Tools is a powerful open-source software suite for optimization, developed by Google. The implementation of algorithm bellow is based on a paper https://medium.com/data-science/the-vehicle-routing-problem-exact-and-heuristic-solutions-c411c0f4d734. " \
+    "It expects a test problem in the CVRP problem format (see https://github.com/PyVRP/Instances/tree/main/CVRP). " \
+    "For solution strategies, CHRISTOFIDES and PATH_CHEAPEST_ARC are supported. Later it will be possible to choose more strategies. " \
+    "The solver gives you all the routes and final best cost, and visualizes them on a 2D plot.")
 
 # check OR-Tools at startup
 ok, msg = ensure_ortools()

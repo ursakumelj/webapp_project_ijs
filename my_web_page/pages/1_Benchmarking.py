@@ -58,9 +58,10 @@ def run_optimization(algorithm, benchmark_func, dimensions, budget):
 
 # ===== WEB APP
 st.set_page_config(page_title="Benchmarking Evolutionary Algorithms")
-st.title("Evolutionary algorithm benchmarking tool")
+st.title(":material/insights: Evolutionary algorithm benchmarking tool")
 
-st.info("If the page fails to load properly, try refreshing it.")
+st.warning("If the page fails to load properly, try refreshing it.")
+st.info("Test three benchmark functions with different evolutionary algorithms. Choose the budget, number of runs, and dimensions, then compare results across algorithms and parameters.")
 
 # ===== Sidebar Controls =====
 with st.sidebar:
